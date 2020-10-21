@@ -1,29 +1,11 @@
-.navBar {
-    margin-top: 0px;
-    margin-bottom: 3px;
-    background-color: #171717;
-    color: white;
-    box-shadow: 0px 5px 5px #171717;
-    font-family: Inter;
-    padding-top: 4px;
-    text-shadow: 2px 2px 10px black;
-  }
-    .navOptions {
-    margin-top: 0px;
-    color: white;
-    font-family: Inter;
-    padding: 5px;
-    padding-top: 6px;
-    font-size:0.75em;
-    text-shadow: 2px 2px 10px black;
-  }
     .Header {
-    margin-top: 0px;
+    margin: 5em;
+    padding:2em;
     background-image: linear-gradient(to right, #ff458a, #00a5f8);
     box-shadow: 0px 5px 5px #171717;
     text-align: center;
     font-family: Staatliches;
-    padding: 12px;
+    color: white;
     text-shadow: 2px 2px 10px black;
   }
     .Subtitle {
@@ -60,4 +42,27 @@
     text-shadow: 1px 1px 5px black;
     color: white;
     font-size:1.5em;
+  }
+
+  @keyframes breatheAnimation {
+    0%   {background-color: #303030;}
+    50%  {background-color: #171717;}
+    100% {background-color: #303030;}
+  }
+  
+  /* The element to apply the animation to */
+  .breathe {
+    height: 100%;
+    
+    background-size: cover;
+    animation-name: breatheAnimation;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+  }
+
+  .centerimg {
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
   }
