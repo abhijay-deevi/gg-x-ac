@@ -46,7 +46,9 @@
 
   @keyframes breatheAnimation {
     0%   {background-color: #303030;}
+    25%   {background-color: #202020;}
     50%  {background-color: #171717;}
+    75%   {background-color: #202020;}
     100% {background-color: #303030;}
   }
   
@@ -56,8 +58,9 @@
     
     background-size: cover;
     animation-name: breatheAnimation;
-    animation-duration: 9s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
+    animation-timing-function:linear;
   }
 
   .centerimg {
