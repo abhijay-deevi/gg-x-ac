@@ -69,3 +69,7 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .active a{
+    color: #ff458a !important;
+  }
