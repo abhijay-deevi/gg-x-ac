@@ -56,11 +56,10 @@
   .cartButton {
     background-color: #ff458a;
     padding:5px;
-    
+    border-radius:7px;
   }
 
   a.cartButton:hover {
-    transform: translateX(-5px);
     text-decoration: none;
     color: white;
   }
