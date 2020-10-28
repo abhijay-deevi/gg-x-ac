@@ -59,15 +59,22 @@
     border-radius:7px;
   }
 
-  a.cartButton:hover {
-    text-decoration: none;
-    color: white;
-  }
   a.cartButton:link, a.cartButton:visited {
     text-decoration: none;
     color: white;
   }
 
+  a.cartButton:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+  p.buttonAnim:hover {
+    backdrop-filter: blur(10px);
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    padding:4%;
+    border-radius:7px;
+  }
 
 
   @keyframes breatheAnimation {
