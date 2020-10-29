@@ -1,0 +1,38 @@
+{% extends "base1.html" %}
+{% block title %}Clothing{% endblock %}
+{% block itemview %}
+        <div style="padding-top:100px;margin-left:10%;">
+            
+            <img style="margin-top:50px;width:40%;height:40%" class="merchImages" src="{{url_for('static', filename='images/apco/tshirt mockup.jpg')}}" alt="shirt">
+            <div style="float:right;width:55%;margin-top:50px;padding-right:25%">
+                <p class="Titles">Product Name</p>
+
+                <div class="Paragraph" style="text-align:left;font-size:1em;margin-top:0%">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i>(1000 reviews)</i>
+                </div>
+                <p style="font-family: Bitter; text-shadow: 1px 1px 5px black; color: white;font-size:1em; font-family: Bitter; margin-top:3%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt placerat tortor, eget congue urna porttitor sed. Vestibulum consequat auctor consequat. Quisque quis cursus lectus. Donec nec tortor a massa sagittis ornare id ac ligula. Nulla tempus at ligula nec vulputate. Praesent vitae mauris nec leo aliquam dignissim a at felis. Vivamus pellentesque massa eget ex cursus sollicitudin. Praesent quis nisl non libero consequat consectetur. Vivamus interdum, diam sit amet facilisis aliquam, purus risus tempor eros, nec accumsan mauris quam non nulla.</p>
+                <div style="margin-top:5%;float:left;width:50%;" class="Paragraph">
+<label style="font-family: Bitter; text-shadow: 1px 1px 5px black;" for="pet-select">Choose Size</label>
+   <br> 
+<select name="pets" id="pet-select">
+ <option value="XS">XS</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="XXL">XXL</option>
+</select>
+                </div>
+                <div style="margin-top:-4.9%;float:right;width:85%;" class="Paragraph">
+                    <a class="cartButton" href="#">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        {% endblock %}
+</body>
+</html>

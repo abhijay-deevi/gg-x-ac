@@ -1,0 +1,128 @@
+    .Header {
+    padding: 2em;
+    position: relative;
+width:100%;
+margin-bottom: 30px;
+    background-image: linear-gradient(to right,#ff458a,#171717,#00a5f8 );;
+    box-shadow: 0px 5px 5px #171717;
+    text-align: center;
+    font-family: Staatliches;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+  }
+    .Subtitle {
+    margin-top: 5px;
+    text-align: center;
+    font-family: Inter;
+    padding: 5px;
+    text-shadow: 1px 1px 5px black;
+    color: white;
+  }
+  .Names {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-family: Bitter;
+    padding: 5px;
+    text-shadow: 1px 1px 5px black;
+    color: white;
+    font-size:1.2em;
+  }
+  .Paragraph {
+    margin-top: 0em;
+    font-family: Bitter;
+    padding: 0px;
+    text-shadow: 1px 1px 5px black;
+    color: white;
+    font-size:1em;
+  }
+  .Titles {
+    font-family: Bitter;
+    text-shadow: 1px 1px 5px black;
+    color: white;
+    font-size:2em;
+  }
+  .dropShadow {
+    box-shadow: 0px 5px 5px #171717;
+  }
+
+  .merchImages {
+    width:22%;
+    height:22%;
+    box-shadow: 0px 5px 5px #171717;
+  }
+
+  .cartButton {
+    background-color: #ff458a;
+    padding:5px;
+    border-radius:7px;
+    transition-duration: 0.5s
+  }
+
+  a.cartButton:link, a.cartButton:visited {
+    text-decoration: none;
+    color: white;
+  }
+
+  a.cartButton:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+ .cartButton:hover {
+  background-color:#00a5f8;
+  }
+
+
+  @keyframes breatheAnimation {
+    0%   {background-color: #303030;}
+    25%   {background-color: #202020;}
+    50%  {background-color: #171717;}
+    75%   {background-color: #202020;}
+    100% {background-color: #303030;}
+  }
+  
+  /* The element to apply the animation to */
+  .breathe {
+    height: 100%;
+    
+    background-size: cover;
+    animation-name: breatheAnimation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+  }
+
+  .centerimg {
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .active a{
+    color: #ff458a !important;
+  }
+
+  select {
+    background-color:#ff458a;
+    color:white;
+    font-size:20px;
+    transition-duration: 0.5s;
+    font-family: Bitter;
+    text-shadow: 1px 1px 5px black;
+    border-radius: 6px;
+  }
+
+  select:hover {
+  background-color:#00a5f8;
+
+  }
+
+  .fixed-footer {
+  overflow: hidden;
+  list-style: none;
+  background-color:#121212;
+  position: absolute;
+  bottom: -30%;
+  width: 100%;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="{{url_for('static', filename='images/favicon.png')}}"/>
+
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+
+        body {
+            background-color:#303030;
+        }
+
+        .navbar-nav > .active > a { 
+        color: #ff458a ; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="dropShadow" style="position:fixed;min-width:100%">
+    <nav class="navbar navbar-dark navbar-expand-md justify-content-md-center justify-content-start" style="background-color: #171717; background-image: linear-gradient(to right,#ff458a,#171717 ,#00a5f8 );" >
+        <a class="navbar-brand d-md-none d-inline" href="home">APCO x GG</a>
+        <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
+            <a class="nav-link" style="color:#ff458a;font-size:2em; text-shadow: 0px 0px 10px black" href="https://youtube.com/albertpanicompaniYT"><i class="fa fa-youtube-play"></i></a> 
+            <a class="nav-link" style="color:#ff458a;font-size:2em; text-shadow: 0px 0px 10px black" href="https://instagram.com/_kevintdo_"><i class="fa fa-instagram"></i></a> 
+            <a class="nav-link" style="color:#ff458a;font-size:2em; text-shadow: 0px 0px 10px black" href="https://github.com/kevin-dough"><i class="fa fa-github"></i></a> 
+        </ul>
+        <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+            <ul class="navbar-nav mx-auto text-md-center text-left">
+                <li class="nav-item">
+                    <a style="margin-top:0.75em;font-size:1.25em;color:white;text-shadow: 0px 0px 10px black" class="nav-link" href="#">ABOUT</a> 
+                </li>
+                <li class="nav-item">
+                    <a style="margin-top:0.75em;font-size:1.25em;color:white;text-shadow: 0px 0px 10px black" class="nav-link" href="#">MERCHANDISE</a>
+                </li>
+                <li class="nav-item my-auto">
+                    <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="home"><img style="margin-top:0.5em" src="{{url_for('static', filename='images/apcoxgg.png')}}" width=127.625px height=75.75px></a>
+                </li>
+                <li class="nav-item">
+                    <a style="margin-top:0.75em;font-size:1.25em;color:white;text-shadow: 0px 0px 10px black" class="nav-link" href="#">MERCHANDISE</a> 
+                </li>
+                <li class="nav-item">
+                    <a style="margin-top:0.75em;font-size:1.25em;color:white; text-shadow: 0px 0px 10px black" class="nav-link" href="#">ABOUT</a> 
+                </li>
+            </ul>
+            <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
+                <li class="nav-item"><a class="nav-link" style="color:#00a5f8;font-size:2em; text-shadow: 0px 0px 10px black" href="https://youtube.com/godlygoats"><i class="fa fa-youtube-play"></i></a> </li>
+                <li class="nav-item"><a class="nav-link" style="color:#00a5f8;font-size:2em; text-shadow: 0px 0px 10px black" href="https://instagram.com/dv_a_bee"><i class="fa fa-instagram"></i></a> </li>
+                <li class="nav-item"><a class="nav-link" style="color:#00a5f8;font-size:2em; text-shadow: 0px 0px 10px black" href="https://github.com/dubshott"><i class="fa fa-github"></i></a> </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+<div class="fixed-footer">
+<li class="nav-item my-auto">
+<center><a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="home"><img style="margin-bottom:0px" src="{{url_for('static', filename='images/apcoxgg.png')}}" width=60px height=35px></a>
+</div></center>
+
+      {% block products %}
+  {% endblock %}
+        {% block itemview %}
+  {% endblock %}
+    </body>
+</html>
