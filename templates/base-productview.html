@@ -1,0 +1,35 @@
+{% extends "base1.html" %}
+{% block baseproductview %}
+        <div style="padding-top:100px;margin-left:10%;">
+            <img style="margin-top:50px;width:40%;height:40%" class="merchImages"  src="{% block productimage %}{% endblock %}"  alt="shirt">
+            <div style="float:right;width:55%;margin-top:50px;padding-right:25%">
+                <p class="Titles">{% block productname %}{% endblock %}</p>
+
+                <div class="Paragraph" style="text-align:left;font-size:1em;margin-top:0%">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i style="{% block fourthstar %}{% endblock %}" class="fa fa-star"></i>
+                    <i style="{% block fifthstar %}{% endblock %}" class="fa fa-star"></i>
+                    <i>(213 reviews)</i>
+                </div>
+                <p style="font-family: Bitter; text-shadow: 1px 1px 5px black; color: white;font-size:1em; font-family: Bitter; margin-top:3%">{% block desc %}{% endblock %}</p>
+                <div style="margin-top:5%;float:left;width:50%;" class="Paragraph">
+<label style="font-family: Bitter; text-shadow: 1px 1px 5px black;" for="pet-select">Choose Size</label>
+   <br> 
+<select name="pets" id="pet-select">
+ <option value="XS">XS</option>
+    <option value="S">S</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="XXL">XXL</option>
+</select>
+                </div>
+                <div style="margin-top:-4.9%;float:right;width:85%;" class="Paragraph">
+                    <a class="cartButton" href="#">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        
+{% endblock %}

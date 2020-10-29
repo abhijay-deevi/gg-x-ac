@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" href="{{url_for('static', filename='images/favicon.png')}}"/>
 
     <meta charset="utf-8">
-    <title>{% block title %}{% endblock %}</title>
+    <title>ACxGG</title>
     <style>
 
         body {
@@ -33,45 +33,37 @@
         <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
-            <a class="nav-link" style="color:#ff458a;font-size:2em; text-shadow: 0px 0px 10px black" href="https://youtube.com/albertpanicompaniYT"><i class="fa fa-youtube-play"></i></a> 
-            <a class="nav-link" style="color:#ff458a;font-size:2em; text-shadow: 0px 0px 10px black" href="https://instagram.com/_kevintdo_"><i class="fa fa-instagram"></i></a> 
-            <a class="nav-link" style="color:#ff458a;font-size:2em; text-shadow: 0px 0px 10px black" href="https://github.com/kevin-dough"><i class="fa fa-github"></i></a> 
-        </ul>
         <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
             <ul class="navbar-nav mx-auto text-md-center text-left">
                 <li class="nav-item">
-                    <a style="margin-top:0.75em;font-size:1.25em;color:white;text-shadow: 0px 0px 10px black" class="nav-link" href="#">ABOUT</a> 
+                    <b><a style="margin-top:0.85em;font-size:1.25em;color:white;text-shadow: 0px 0px 10px black; position: fixed; left: 100px;" class="nav-link" href="home">HOME</a></b>
                 </li>
-                <li class="nav-item">
-                    <a style="margin-top:0.75em;font-size:1.25em;color:white;text-shadow: 0px 0px 10px black" class="nav-link" href="#">MERCHANDISE</a>
-                </li>
-                <li class="nav-item my-auto">
+               <li class="nav-item my-auto">
                     <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="home"><img style="margin-top:0.5em" src="{{url_for('static', filename='images/apcoxgg.png')}}" width=127.625px height=75.75px></a>
                 </li>
                 <li class="nav-item">
-                    <a style="margin-top:0.75em;font-size:1.25em;color:white;text-shadow: 0px 0px 10px black" class="nav-link" href="#">MERCHANDISE</a> 
+                    <a href="cart"><i style="margin-top:0.75em;font-size:2em;color:white;text-shadow: 0px 0px 10px black;  position: fixed; right: 100px;" class="nav-link fa fa-shopping-cart"></i></a>
                 </li>
-                <li class="nav-item">
-                    <a style="margin-top:0.75em;font-size:1.25em;color:white; text-shadow: 0px 0px 10px black" class="nav-link" href="#">ABOUT</a> 
-                </li>
-            </ul>
-            <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
-                <li class="nav-item"><a class="nav-link" style="color:#00a5f8;font-size:2em; text-shadow: 0px 0px 10px black" href="https://youtube.com/godlygoats"><i class="fa fa-youtube-play"></i></a> </li>
-                <li class="nav-item"><a class="nav-link" style="color:#00a5f8;font-size:2em; text-shadow: 0px 0px 10px black" href="https://instagram.com/dv_a_bee"><i class="fa fa-instagram"></i></a> </li>
-                <li class="nav-item"><a class="nav-link" style="color:#00a5f8;font-size:2em; text-shadow: 0px 0px 10px black" href="https://github.com/dubshott"><i class="fa fa-github"></i></a> </li>
             </ul>
         </div>
     </nav>
     </div>
 <div class="fixed-footer">
 <li class="nav-item my-auto">
-<center><a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="home"><img style="margin-bottom:0px" src="{{url_for('static', filename='images/apcoxgg.png')}}" width=60px height=35px></a>
-</div></center>
+<a class="footer-icons-red" href="https://youtube.com/albertpanicompaniYT"><i class="fa fa-youtube-play"></i></a> 
+<a class="footer-icons-red" style="left: 20px;" href="https://instagram.com/_kevintdo_"><i class="fa fa-instagram"></i></a> 
+<a class="footer-icons-red" style="left: 40px;" href="https://github.com/kevin-dough"><i class="fa fa-github"></i></a> 
+<center><a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="home"><img style="margin-bottom:0px" src="{{url_for('static', filename='images/apcoxgg.png')}}" width=60px height=35px></a></center>
+<a class="footer-icons-blue" style="left: 1880px; "href="https://youtube.com/albertpanicompaniYT"><i class="fa fa-youtube-play"></i></a> 
+<a class="footer-icons-blue" style="left: 1860px; "href="https://instagram.com/_kevintdo_"><i class="fa fa-instagram"></i></a> 
+<a class="footer-icons-blue" style="left: 1840px; "href="https://github.com/kevin-dough"><i class="fa fa-github"></i></a> 
+</div>
 
-      {% block products %}
+{% block products %}
   {% endblock %}
-        {% block itemview %}
+{% block itemview %}
   {% endblock %}
+  {% block baseproductview %}
+   {% endblock %}
     </body>
 </html>
