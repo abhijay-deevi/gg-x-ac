@@ -1,6 +1,6 @@
-P4 Slackbots Merchandise Store
+#P4 Slackbots Merchandise Store
 
-The slackbot merch website was designed to display a variety of different clothing. 
+The APCO x GG merch website was designed to display a variety of different clothing. 
 Our goal with this is to create a well put together ecommerce website that looks 
 very appealing and welcoming. We will back this up by creating our own clothing designed
 by yours truly. The website will have different sizes and colors to choose from. 
