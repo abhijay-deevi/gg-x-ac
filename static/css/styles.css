@@ -1,8 +1,8 @@
     .Header {
     padding: 2em;
     position: relative;
-width:100%;
-margin-bottom: 30px;
+    width:100%;
+    margin-bottom: 30px;
     background-image: linear-gradient(to right,#ff458a,#171717,#00a5f8 );;
     text-align: center;
     font-family: Staatliches;
@@ -126,31 +126,34 @@ margin-bottom: 30px;
   width: 100%;
 }
 
-.footer-icons-red {
-  margin-left: 8px;
-  color:#ff458a;
-  font-size:1em; 
-  position:absolute; 
-  top:4px;
-  transition-duration: 0.3s;
-}
+   .footer-icons-red {
+      margin-left: 8px;
+      color:#ff458a;
+      font-size:1em;
+      position:absolute;
+      top:4px;
+      transition-duration: 0.3s;
+    }
 
-.footer-icons-red:hover {
-  color:#91274f;
-}
+   .footer-icons-red:hover {
+      color:#91274f;
+    }
 
-.footer-icons-blue {
-  margin-right: 8px;
-  color:#00a5f8;
-  font-size:1em; 
-  position:absolute; 
-  top:4px;
-  transition-duration: 0.3s;
-}
+   .footer-icons-blue {
+      margin-right: 8px;
+      color:#00a5f8;
+      font-size:1em;
+      position:absolute;
+      top:4px;
+      transition-duration: 0.3s;
+    }
 
-.footer-icons-blue:hover {
-  color:#0075b0;
-}
+   .footer-icons-blue:hover {
+      color:#0075b0;
+    }
+
+    #products{
+    }
 
 body::-webkit-scrollbar {
   width: 19px; /* width of the entire scrollbar */
