@@ -9,7 +9,7 @@ def landing():
 
 @app.route("/home")
 def home():
-	return render_template("acxgg.html")
+	return render_template("apcoxgg.html")
 
 @app.route("/baseview")
 def baseview():
