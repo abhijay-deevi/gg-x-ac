@@ -15,13 +15,25 @@ def home():
 def baseview():
 	return render_template("base-productview.html")
 
-@app.route("/ACMain")
-def ACMain():
-	return render_template("AC-Main.html")
+@app.route("/shoebaseview")
+def shoebaseview():
+	return render_template("base-productview-shoe.html")
 
-@app.route("/ACHoodie")
-def ACHoodie():
-	return render_template("ac-hoodie.html")
+@app.route("/APCOFluid")
+def APCOFluid():
+	return render_template("apco-fluid.html")
+
+@app.route("/APCOSuperstar")
+def APCOSuperstar():
+	return render_template("apco-superstar.html")
+
+@app.route("/GGFireworks")
+def GGFireworks():
+	return render_template("gg-fireworks.html")
+
+@app.route("/GGSuperstar")
+def GGSuperstar():
+	return render_template("gg-superstar.html")
 
 if __name__ == "__main__":
 	app.run(debug=True)
