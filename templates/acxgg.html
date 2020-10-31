@@ -1,6 +1,8 @@
+
 {% extends "base1.html" %}
 {% block products %}
-<center>
+
+    <center>
 
     <div class="dropShadow"> <!-- banner -->
         <img style="margin-top:100px;min-width:100%;width:100%;height:auto"src="{{url_for('static', filename='images/apcoxggbannercrop.jpg')}}" alt="channel art" width=relative>
@@ -11,7 +13,7 @@
 
     <center>
     <div style="margin-top:0em" class="Header">
-        <h1 id="products" style="font-size:4em;scroll-behavior:smooth;">Products</h1>
+        <h1 id="products" style="font-size:4em;">Products</h1>
         <p style="font-size:2em" class="Paragraph">Get one before they are all gone!</p>
     </div>
 
@@ -21,4 +23,6 @@
         <img href="#" class="merchImages" src="{{url_for('static', filename='images/gg/ggshirts.jpg')}}" alt="shirt">
         <img class="merchImages" src="{{url_for('static', filename='images/apco/tshirt mockup.jpg')}}" alt="shirt">
     </div>
+    </center>
+
 {% endblock %}
