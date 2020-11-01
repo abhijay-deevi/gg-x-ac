@@ -74,14 +74,14 @@
   }
 
  a.cartButton:hover {
-    animation: animate 8s linear infinite;
+    animation: cartanimation 8s linear infinite;
   }
 
-  @keyframes animate {
+  @keyframes cartanimation {
     0% {background-position: 0%;}
     100% {background-position: 400%;}
   }
-
+/*
   a.cartButton:before {
     content: '';
     position: absolute;
@@ -95,6 +95,7 @@
     opacity: 0;
     transition: 0.5s;
   }
+*/
 
   a.cartButton:hover:before {
     filter: blur(20px);
