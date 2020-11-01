@@ -189,11 +189,11 @@ body::-webkit-scrollbar {
                
 }
 body::-webkit-scrollbar-track {
-  background: white; /* color of the tracking area */
+  background: white; /* color of the track that the scrollbar moves on */
 }
 body::-webkit-scrollbar-thumb {
   background-image: linear-gradient(180deg,#00a5f8, #ff458a); /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid white; /* creates padding around scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb (the thing that moves) */
+  border: 3px solid white; /* creates a white border around scroll thumb */
 }
 /*test commit*/
