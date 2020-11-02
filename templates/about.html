@@ -13,9 +13,22 @@
 
 <center>
     <div style="margin-top:0em" class="Header">
-        <h1 class="products" style="font-size:4em;">Products</h1>
-        <p style="font-size:2em" class="Paragraph">Get one before they are all gone!</p>
+        <h1 class="products" style="font-size:4em;">About Us</h1>
+        <p style="font-size:2em" class="Paragraph">Meet the P4 Slackbots Team!</p>
     </div>
 
+    {% endblock %}
+
+    {% block datalist %}
+
+    {% for data in datalist: %}
+    {% set name = data["name"] %}
+    {% set bday = data["bday"] %}
+
+    <h1>Hello! My name is {{name}}.</h1>
+    <ol>
+        <li>My birthday is {{bday}}.</li>
+    </ol>
+    {% endfor %}
 
     {% endblock %}
