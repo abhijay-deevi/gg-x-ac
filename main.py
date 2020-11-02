@@ -11,6 +11,10 @@ def landing():
 def home():
 	return render_template("apcoxgg.html")
 
+@app.route("/about")
+def about():
+	return render_template("about.html")
+
 @app.route("/baseview")
 def baseview():
 	return render_template("base-productview.html")
