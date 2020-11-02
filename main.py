@@ -1,4 +1,5 @@
 from flask import Flask, redirect, url_for, render_template
+import data
 
 app= Flask(__name__)
 
@@ -13,7 +14,7 @@ def home():
 
 @app.route("/about")
 def about():
-	return render_template("about.html")
+	return render_template("about.html", groupdatalist=data.groupdata())
 
 @app.route("/baseview")
 def baseview():

@@ -1,34 +1,82 @@
+<!DOCTYPE html>
+<style>
+        li.aboutkevin:before {
+        content: '\1F611';
+        margin-left: -20px;
+        margin-right: 10px;
+        }
+
+        li.aboutabhijay:before {
+        content: '\1F92F';
+        margin-left: -20px;
+        margin-right: 10px;
+        }
+
+        li.aboutpaul:before {
+        content: '\1F95E';
+        margin-left: -20px;
+        margin-right: 10px;
+        }
+
+        li.abouttravis:before {
+        content: '\1F924';
+        margin-left: -20px;
+        margin-right: 10px;
+        }
+
+        li.aboutgavin:before {
+        content: '\1F95E';
+        margin-left: -20px;
+        margin-right: 10px;
+        }
+
+        ul.aboutlists {
+        list-style-type: none;
+        }
+
+    </style>
+<html>
 {% extends "base1.html" %}
 
 {% block about %}
+    <center>
 
-<center>
+        <div class="dropShadow"> <!-- banner -->
+            <img style="margin-top:100px;min-width:100%;width:100%;height:auto"src="{{url_for('static', filename='images/apcoxggbannercrop.jpg')}}" alt="channel art" width=relative>
+        </div>
 
-    <div class="dropShadow"> <!-- banner -->
-        <img style="margin-top:100px;min-width:100%;width:100%;height:auto"src="{{url_for('static', filename='images/apcoxggbannercrop.jpg')}}" alt="channel art" width=relative>
-    </div>
-
-</center>
+    </center>
 
 
-<center>
-    <div style="margin-top:0em" class="Header">
-        <h1 class="products" style="font-size:4em;">About Us</h1>
-        <p style="font-size:2em" class="Paragraph">Meet the P4 Slackbots Team!</p>
-    </div>
+    <center>
+        <div style="margin-top:0em" class="Header">
+            <h1 class="products" style="font-size:4em;">About Us</h1>
+            <p style="font-size:2em" class="Paragraph">Meet the P4 Slackbots!</p>
+        </div>
+    </center>
 
-    {% endblock %}
-
-    {% block datalist %}
-
-    {% for data in datalist: %}
+    {% for data in groupdatalist: %}
     {% set name = data["name"] %}
-    {% set bday = data["bday"] %}
+    {% set emoji = data["emoji"] %}
+    {% set hellojournal = data["hellojournal"] %}
+    {% set helloplan = data["helloplan"] %}
+    {% set flaskjournal = data["flaskjournal"] %}
+    {% set flaskplan = data["flaskplan"] %}
 
-    <h1>Hello! My name is {{name}}.</h1>
-    <ol>
-        <li>My birthday is {{bday}}.</li>
-    </ol>
+    <div style="margin-left:10%;width=30%;float:left" class="justify-content-center">
+    <p class="Titles">{{name}}:</p>
+    <ul class="Paragraph aboutlists">
+        <b>Hello Series</b>
+        <li class="about{{emoji}}"><a target="blank" href={{hellojournal}}>Hello Series Journal</a></li>
+        <li class="about{{emoji}}"><a target="blank" href={{helloplan}}>Hello Series Plan</a></li>
+        <b>Flask Series</b>
+        <li class="about{{emoji}}"><a target="blank" href={{flaskjournal}}>Flask Series Journal</a></li>
+        <li class="about{{emoji}}"><a target="blank" href={{flaskplan}}>Flask Series Plan</a></li>
+    </ul>
+    </div>
     {% endfor %}
 
+
     {% endblock %}
+
+</html>
