@@ -38,9 +38,25 @@
             <ul class="navbar-nav mx-auto text-md-center text-left">
                 <li class="nav-item">
                     <b><a style="margin-top:0.85em;font-size:1.25em;color:white;text-shadow: 0px 0px 10px black; position: fixed; left: 100px;" class="nav-link" href="home">HOME</a></b>
+                </li>
+                <li class="nav-item">
                     <b><a style="margin-top:0.85em;font-size:1.25em;color:white;text-shadow: 0px 0px 10px black; position: fixed; left: 200px;" class="nav-link" href="home#products">PRODUCTS</a></b>
-                    <b><a style="margin-top:0.85em;font-size:1.25em;color:white;text-shadow: 0px 0px 10px black; position: fixed; left: 350px;" class="nav-link" href="about">ABOUT
-                    </a></b>
+                </li>
+                <li class="nav-item dropdown" style="font-size:1.25em;margin-top:0.85em; position: fixed; left: 350px;">
+                    <a class="nav-link dropdown-toggle" style="color:white;text-shadow: 0px 0px 10px black;"
+                       href="#"
+                       id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <b>ABOUT</b>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-left"  aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="about"><b>P4 SLACKBOTS</b></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><b>KEVIN</b></a>
+                        <a class="dropdown-item" href="#"><b>ABHIJAY</b></a>
+                        <a class="dropdown-item" href="#"><b>PAUL</b></a>
+                        <a class="dropdown-item" href="#"><b>TRAVIS</b></a>
+                        <a class="dropdown-item" href="#"><b>GAVIN</b></a>
+                    </div>
                 </li>
                <li class="nav-item my-auto">
                     <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="home"><img style="margin-top:0.5em" src="{{url_for('static', filename='images/apcoxgg.png')}}" width=127.625px height=75.75px></a>
@@ -73,6 +89,8 @@
         <a class="footer-icons-blue" style="left: 1860px; "href="https://instagram.com/dv_a_bee"><i class="fa fa-instagram"></i></a>
         <a class="footer-icons-blue" style="left: 1840px; "href="https://github.com/Dubshott"><i class="fa fa-github"></i></a>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     </body>
 </html>
