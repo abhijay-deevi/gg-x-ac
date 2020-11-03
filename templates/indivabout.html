@@ -6,8 +6,10 @@
 {% set helloplan = data["helloplan"] %}
 {% set flaskjournal = data["flaskjournal"] %}
 {% set flaskplan = data["flaskplan"] %}
+{% set video = data["video"] %}
 <head>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <style>
 
@@ -35,7 +37,7 @@
 
 
 
-    <div style="margin-left:10%;width=30%;float:left" class="justify-content-center">
+    <div style="margin-left:10%;margin-right:10%;width=50%;float:left">
     <p class="Titles">{{name}}:</p>
     <ul class="Paragraph aboutlists">
         <b>Hello Series</b>
@@ -46,13 +48,19 @@
         <li class="about{{emoji}}"><a target="blank" href={{flaskplan}}>Flask Series Plan</a></li>
     </ul>
     </div>
+    <div style="margin-left:10%;width=50%;align-items:left">
+            <p class="Titles">1-Minute Video:</p>
+        <iframe width="640" height="360" src="{{video}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
 
-<iframe style="margin-top:2%;margin-left:9%; float:left" width="40%" height="400px"
-        src="https://docs.google.com/document/d/e/2PACX-1vRqoJWbETL8islthF7DjQ3tHFAcZd1MtfZb66QYyebpWGzR6gX9or5C3-tPb7rzghZr9ndwGrXpBt0A/pub?embedded=true"></iframe>
-<iframe style="margin-top:2%;margin-right:9%; float:right" width="40%" height="400px"
-        src="https://docs.google.com/document/d/e/2PACX-1vTstUKuZXO0tfVxHcthfq7GYNL6f5nZctxQula8PHZY9zJqgS1pIJORw5NrWm-Q8Dop_8kN2AzlbK-8/pub?embedded=true"></iframe>
-<center><iframe style="margin-top:2%" width="50%" height="500px" src="https://repl.it/@AbhijayDeevi/TableOfContents/?lite=true"></iframe>
-</center>
+
+<center><iframe  style="margin-top:2%;float:left;margin-left:8%" width="40%" height="800px"
+                 src="https://docs.google.com/document/d/e/2PACX-1vRqoJWbETL8islthF7DjQ3tHFAcZd1MtfZb66QYyebpWGzR6gX9or5C3-tPb7rzghZr9ndwGrXpBt0A/pub?embedded=true"></iframe></center>
+
+<center><iframe style="margin-top:2%;float:right;margin-right:8%" width="40%" height="800px"
+                src="https://docs.google.com/document/d/e/2PACX-1vTstUKuZXO0tfVxHcthfq7GYNL6f5nZctxQula8PHZY9zJqgS1pIJORw5NrWm-Q8Dop_8kN2AzlbK-8/pub?embedded=true"></iframe></center>
+<center><iframe style="margin-top:2%;" width="80%" height="800px" src="https://repl.it/@AbhijayDeevi/TableOfContents/?lite=true"></iframe></center>
+
 {% endblock %}
 
 </html>
