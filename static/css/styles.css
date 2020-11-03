@@ -150,8 +150,8 @@
   overflow: hidden;
   list-style: none;
   background-color:#121212;
-  position: absolute;
-  bottom: -60%;
+  position: relative;
+  bottom: 0;
   width: 100%;
 }
 
