@@ -34,6 +34,10 @@
         list-style-type: none;
         }
 
+        iframe {
+        border: 0.2em solid #ff458a;
+        }
+
     </style>
 <html>
 {% extends "base1.html" %}
@@ -76,7 +80,10 @@
     </div>
     {% endfor %}
 
-
+<iframe style="margin-left:10%; float:left" width="40%" height="400px"
+        src="https://docs.google.com/document/d/e/2PACX-1vRqoJWbETL8islthF7DjQ3tHFAcZd1MtfZb66QYyebpWGzR6gX9or5C3-tPb7rzghZr9ndwGrXpBt0A/pub?embedded=true"></iframe>
+<iframe style="margin-right:10%; float:right" width="40%" height="400px"
+        src="https://docs.google.com/document/d/e/2PACX-1vTstUKuZXO0tfVxHcthfq7GYNL6f5nZctxQula8PHZY9zJqgS1pIJORw5NrWm-Q8Dop_8kN2AzlbK-8/pub?embedded=true"></iframe>
     {% endblock %}
 
 </html>
