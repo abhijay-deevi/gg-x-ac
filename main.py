@@ -60,5 +60,9 @@ def GGFireworks():
 def GGSuperstar():
 	return render_template("gg-superstar.html")
 
+@app.route("/Products")
+def Products():
+	return render_template("products.html")
+
 if __name__ == "__main__":
 	app.run(debug=True)
