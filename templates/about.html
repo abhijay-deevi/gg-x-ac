@@ -6,10 +6,10 @@
 
 <style>
 
-
-    </style>
+</style>
 <html>
 {% extends "base1.html" %}
+<body>
 
 {% block about %}
     <center>
@@ -37,18 +37,19 @@
     {% set flaskplan = data["flaskplan"] %}
 
     <div style="margin-left:10%;width=30%;float:left" class="justify-content-center">
-    <p class="Titles">{{name}}:</p>
+        <p class="Titles"><a class="aboutlinks" href={{emoji}}>{{name}}:</a></p>
     <ul class="Paragraph aboutlists">
         <b>Hello Series</b>
-        <li class="about{{emoji}}"><a target="blank" href={{hellojournal}}>Hello Series Journal</a></li>
-        <li class="about{{emoji}}"><a target="blank" href={{helloplan}}>Hello Series Plan</a></li>
+        <li class="about{{emoji}}"><a class="aboutlinks" target="blank" href={{hellojournal}}>Hello Series Journal</a></li>
+        <li class="about{{emoji}}"><a class="aboutlinks" target="blank" href={{helloplan}}>Hello Series Plan</a></li>
+        <li class="about{{emoji}}"><a class="aboutlinks" target="blank" href="https://repl.it/@AbhijayDeevi/TableOfContents">Repl.it</a></li>
         <b>Flask Series</b>
-        <li class="about{{emoji}}"><a target="blank" href={{flaskjournal}}>Flask Series Journal</a></li>
-        <li class="about{{emoji}}"><a target="blank" href={{flaskplan}}>Flask Series Plan</a></li>
+        <li class="about{{emoji}}"><a class="aboutlinks" target="blank" href={{flaskjournal}}>Flask Series Journal</a></li>
+        <li class="about{{emoji}}"><a class="aboutlinks" target="blank" href={{flaskplan}}>Flask Series Plan</a></li>
+        <li class="about{{emoji}}"><a class="aboutlinks" target="blank" href="https://github.com/Dubshott/gg-x-ac">Github</a></li>
     </ul>
     </div>
     {% endfor %}
-<div style="margin-top:5%"></div>
 {% endblock %}
-
+</body>
 </html>

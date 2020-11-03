@@ -155,6 +155,15 @@
   width: 100%;
 }
 
+a.aboutlinks:link, a.aboutlinks:visited {
+    text-decoration: none;
+    color:#ff458a;
+}
+
+a.aboutlinks:hover, a.aboutlinks:active {
+    text-decoration: none;
+    color:#00a5f8;
+}
 
    .footer-icons-red {
       margin-left: 8px;
