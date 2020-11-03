@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+{% set name = data["name"] %}
+{% set emoji = data["emoji"] %}
+{% set hellojournal = data["hellojournal"] %}
+{% set helloplan = data["helloplan"] %}
+{% set flaskjournal = data["flaskjournal"] %}
+{% set flaskplan = data["flaskplan"] %}
+
+<style>
+
+    </style>
+<html>
+{% extends "base1.html" %}
+
+{% block about %}
+    <center>
+
+        <div class="dropShadow"> <!-- banner -->
+            <img style="margin-top:100px;min-width:100%;width:100%;height:auto"src="{{url_for('static', filename='images/apcoxggbannercrop.jpg')}}" alt="channel art" width=relative>
+        </div>
+
+    </center>
+
+
+    <center>
+        <div style="margin-top:0em" class="Header">
+            <h1 class="products" style="font-size:4em;">MEET THE TEAM</h1>
+            <p style="font-size:2em" class="Paragraph">{{name}}</p>
+        </div>
+    </center>
+
+
+
+
+    <div style="margin-left:10%;width=30%;float:left" class="justify-content-center">
+    <p class="Titles">{{name}}:</p>
+    <ul class="Paragraph aboutlists">
+        <b>Hello Series</b>
+        <li class="about{{emoji}}"><a target="blank" href={{hellojournal}}>Hello Series Journal</a></li>
+        <li class="about{{emoji}}"><a target="blank" href={{helloplan}}>Hello Series Plan</a></li>
+        <b>Flask Series</b>
+        <li class="about{{emoji}}"><a target="blank" href={{flaskjournal}}>Flask Series Journal</a></li>
+        <li class="about{{emoji}}"><a target="blank" href={{flaskplan}}>Flask Series Plan</a></li>
+    </ul>
+    </div>
+
+<iframe style="margin-top:2%;margin-left:9%; float:left" width="40%" height="400px"
+        src="https://docs.google.com/document/d/e/2PACX-1vRqoJWbETL8islthF7DjQ3tHFAcZd1MtfZb66QYyebpWGzR6gX9or5C3-tPb7rzghZr9ndwGrXpBt0A/pub?embedded=true"></iframe>
+<iframe style="margin-top:2%;margin-right:9%; float:right" width="40%" height="400px"
+        src="https://docs.google.com/document/d/e/2PACX-1vTstUKuZXO0tfVxHcthfq7GYNL6f5nZctxQula8PHZY9zJqgS1pIJORw5NrWm-Q8Dop_8kN2AzlbK-8/pub?embedded=true"></iframe>
+<center><iframe style="margin-top:2%" width="50%" height="500px" src="https://repl.it/@AbhijayDeevi/TableOfContents#main.py"></iframe>
+</center>
+{% endblock %}
+
+</html>

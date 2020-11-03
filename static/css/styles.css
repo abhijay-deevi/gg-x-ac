@@ -193,4 +193,40 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;       /* roundness of the scroll thumb (the thing that moves) */
   border: 3px solid white; /* creates a white border around scroll thumb */
 }
-/*test commit*/
+        li.aboutkevin:before {
+        content: '\1F47D';
+        margin-left: -20px;
+        margin-right: 10px;
+        }
+
+        li.aboutabhijay:before {
+        content: '\1F92F';
+        margin-left: -20px;
+        margin-right: 10px;
+        }
+
+        li.aboutpaul:before {
+        content: '\1F30C';
+        margin-left: -20px;
+        margin-right: 10px;
+        }
+
+        li.abouttravis:before {
+        content: '\1F924';
+        margin-left: -20px;
+        margin-right: 10px;
+        }
+
+        li.aboutgavin:before {
+        content: '\1F4A6';
+        margin-left: -20px;
+        margin-right: 10px;
+        }
+
+        ul.aboutlists {
+        list-style-type: none;
+        }
+
+        iframe {
+        border: 0.2em solid #ff458a;
+        }

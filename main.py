@@ -12,9 +12,29 @@ def landing():
 def home():
 	return render_template("apcoxgg.html")
 
-@app.route("/about")
-def about():
+@app.route("/slackbots")
+def slackbots():
 	return render_template("about.html", groupdatalist=data.groupdata())
+
+@app.route("/kevin")
+def kevin():
+	return render_template("indivabout.html", data=data.kevin())
+
+@app.route("/abhijay")
+def abhijay():
+	return render_template("indivabout.html", data=data.abhijay())
+
+@app.route("/paul")
+def paul():
+	return render_template("indivabout.html", data=data.paul())
+
+@app.route("/travis")
+def travis():
+	return render_template("indivabout.html", data=data.travis())
+
+@app.route("/gavin")
+def gavin():
+	return render_template("indivabout.html", data=data.gavin())
 
 @app.route("/baseview")
 def baseview():
