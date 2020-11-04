@@ -64,5 +64,9 @@ def GGSuperstar():
 def Products():
 	return render_template("products.html")
 
+@app.route("/Cart")
+def Cart():
+	return render_template("cart.html")
+
 if __name__ == "__main__":
 	app.run(debug=True)
