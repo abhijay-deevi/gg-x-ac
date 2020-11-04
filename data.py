@@ -27,7 +27,7 @@ def paul():
     helloplan = "https://docs.google.com/document/d/1XaPZ--7wySEcW2FxqsHtjPz_ZBL5XkvMO3YKU3WnfuE/edit"
     flaskjournal = "https://docs.google.com/document/u/1/d/1ZO3EeqNx1zvSb9n5SB10LrwVmDFanpyXzBcd8knlcm4/edit"
     flaskplan = "https://docs.google.com/document/d/105jwbIr-4cbkUsLuzsVs2iT0rq5AoKy_bZxHiKmyHqU/edit"
-    video = ""
+    video = "https://www.loom.com/embed/c678e554cf7445c8b0d9d397fe092fa6"
     info = {"name": name, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
     return info
 
