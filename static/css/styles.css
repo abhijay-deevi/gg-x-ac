@@ -241,12 +241,16 @@ body::-webkit-scrollbar-thumb {
         border: 0.2em solid #ff458a;
         }
 .text-box {
-  width:250px;
+  width:350px;
   padding-top:5px;
-  padding-left:3px;
+  padding-left:4px;
   padding-bottom:10px;
   word-wrap: break-word;
   position: absolute;
-  right:430px;
+  right:325px;
   top:89%;
+}
+
+.commentary {
+border: 0.2em solid #ff458a;
 }
