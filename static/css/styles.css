@@ -240,3 +240,13 @@ body::-webkit-scrollbar-thumb {
         iframe {
         border: 0.2em solid #ff458a;
         }
+.text-box {
+  width:250px;
+  padding-top:5px;
+  padding-left:3px;
+  padding-bottom:10px;
+  word-wrap: break-word;
+  position: absolute;
+  right:430px;
+  top:89%;
+}

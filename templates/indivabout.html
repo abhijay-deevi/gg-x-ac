@@ -7,6 +7,7 @@
 {% set flaskjournal = data["flaskjournal"] %}
 {% set flaskplan = data["flaskplan"] %}
 {% set video = data["video"] %}
+{% set summary = data["summary"] %}
 <head>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -51,8 +52,9 @@
     </ul>
     </div>
     <div style="margin-left:10%;width=50%;align-items:left">
-            <p class="Titles">1-Minute Video:</p>
+            <p class="Titles">1-Minute Video & Summary:</p>
         <iframe width="640" height="360" src="{{video}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <p style="font-size:1em" class="Paragraph text-box">{{summary}}</p>
     </div>
 
 

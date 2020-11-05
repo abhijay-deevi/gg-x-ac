@@ -6,7 +6,8 @@ def kevin():
     flaskjournal = "https://docs.google.com/document/u/1/d/1eiWbGAY4qZC81iHmOXacXVoH7pn94lH2Zy-InckIoAM/edit"
     flaskplan = "https://docs.google.com/document/d/105jwbIr-4cbkUsLuzsVs2iT0rq5AoKy_bZxHiKmyHqU/edit"
     video = "https://www.loom.com/embed/a01dc0c3977140308865cc6ab6afcf7a"
-    info = {"name": name, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
+    summary = ""
+    info = {"name": name, "summary": summary, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
     return info
 
 def abhijay():
@@ -17,7 +18,8 @@ def abhijay():
     flaskjournal = "https://docs.google.com/document/u/1/d/1eiWbGAY4qZC81iHmOXacXVoH7pn94lH2Zy-InckIoAM/edit"
     flaskplan = "https://docs.google.com/document/d/105jwbIr-4cbkUsLuzsVs2iT0rq5AoKy_bZxHiKmyHqU/edit"
     video = ""
-    info = {"name": name, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
+    summary = ""
+    info = {"name": name, "summary": summary, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
     return info
 
 def paul():
@@ -28,7 +30,9 @@ def paul():
     flaskjournal = "https://docs.google.com/document/u/1/d/1ZO3EeqNx1zvSb9n5SB10LrwVmDFanpyXzBcd8knlcm4/edit"
     flaskplan = "https://docs.google.com/document/d/105jwbIr-4cbkUsLuzsVs2iT0rq5AoKy_bZxHiKmyHqU/edit"
     video = "https://www.loom.com/embed/c678e554cf7445c8b0d9d397fe092fa6"
-    info = {"name": name, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
+    summary = "Going into the future of Comp Sci, I wil improve my learning of python in order to undertsand and use it more. In addition to learning python " \
+              "I also want to improve on the understanding and speed of using Jinja and Flask syntax. "
+    info = {"name": name, "summary": summary, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
     return info
 
 def travis():
@@ -39,7 +43,8 @@ def travis():
     flaskjournal = "https://docs.google.com/document/u/1/d/1ZO3EeqNx1zvSb9n5SB10LrwVmDFanpyXzBcd8knlcm4/edit"
     flaskplan = "https://docs.google.com/document/d/105jwbIr-4cbkUsLuzsVs2iT0rq5AoKy_bZxHiKmyHqU/edit"
     video = "https://www.loom.com/embed/cc7a5d516fe448fab7ba6fa75af71373"
-    info = {"name": name, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
+    summary = ""
+    info = {"name": name, "summary": summary, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
     return info
 
 def gavin():
@@ -50,7 +55,8 @@ def gavin():
     flaskjournal = "https://docs.google.com/document/u/1/d/1ZO3EeqNx1zvSb9n5SB10LrwVmDFanpyXzBcd8knlcm4/edit"
     flaskplan = "https://docs.google.com/document/d/105jwbIr-4cbkUsLuzsVs2iT0rq5AoKy_bZxHiKmyHqU/edit"
     video = ""
-    info = {"name": name, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
+    summary = ""
+    info = {"name": name, "summary": summary, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
     return info
 
 def groupdata():
