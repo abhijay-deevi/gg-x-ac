@@ -5,7 +5,7 @@ def kevin():
     helloplan = "https://docs.google.com/document/d/1XaPZ--7wySEcW2FxqsHtjPz_ZBL5XkvMO3YKU3WnfuE/edit"
     flaskjournal = "https://docs.google.com/document/u/1/d/1eiWbGAY4qZC81iHmOXacXVoH7pn94lH2Zy-InckIoAM/edit"
     flaskplan = "https://docs.google.com/document/d/105jwbIr-4cbkUsLuzsVs2iT0rq5AoKy_bZxHiKmyHqU/edit"
-    video = "https://www.loom.com/embed/a01dc0c3977140308865cc6ab6afcf7a"
+    video = "https://www.loom.com/embed/d1e7427165784ef68e98f6e4c75c4bde"
     info = {"name": name, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
     return info
 
