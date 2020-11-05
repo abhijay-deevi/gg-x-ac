@@ -6,7 +6,8 @@ def kevin():
     flaskjournal = "https://docs.google.com/document/u/1/d/1eiWbGAY4qZC81iHmOXacXVoH7pn94lH2Zy-InckIoAM/edit"
     flaskplan = "https://docs.google.com/document/d/105jwbIr-4cbkUsLuzsVs2iT0rq5AoKy_bZxHiKmyHqU/edit"
     video = "https://www.loom.com/embed/a01dc0c3977140308865cc6ab6afcf7a"
-    summary = ""
+    summary = "In the future of my computer science career, I desire to explore and learn more about higher difficulty elements that I can implement into my html. For example, " \
+              "I want to learn how to create different encrypted logins and make a working transaction system for a merchandise/e-commerce website. This of course would require much more back-end code as well as text fields for the user to input in the front-end. In our project, Paul led in incorporating Python Jinja, which I was able to learn from and add more to our website. I want to learn more about how I can use Jinja in the website."
     info = {"name": name, "summary": summary, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
     return info
 
