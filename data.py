@@ -16,7 +16,7 @@ def abhijay():
     helloplan = "https://docs.google.com/document/d/1XaPZ--7wySEcW2FxqsHtjPz_ZBL5XkvMO3YKU3WnfuE/edit"
     flaskjournal = "https://docs.google.com/document/u/1/d/1eiWbGAY4qZC81iHmOXacXVoH7pn94lH2Zy-InckIoAM/edit"
     flaskplan = "https://docs.google.com/document/d/105jwbIr-4cbkUsLuzsVs2iT0rq5AoKy_bZxHiKmyHqU/edit"
-    video = ""
+    video = "https://www.loom.com/embed/3d091768686a44cc96eafe356808577e"
     info = {"name": name, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
     return info
 
@@ -49,7 +49,7 @@ def gavin():
     helloplan = "https://docs.google.com/document/d/1XaPZ--7wySEcW2FxqsHtjPz_ZBL5XkvMO3YKU3WnfuE/edit"
     flaskjournal = "https://docs.google.com/document/u/1/d/1ZO3EeqNx1zvSb9n5SB10LrwVmDFanpyXzBcd8knlcm4/edit"
     flaskplan = "https://docs.google.com/document/d/105jwbIr-4cbkUsLuzsVs2iT0rq5AoKy_bZxHiKmyHqU/edit"
-    video = ""
+    video = ""https://www.loom.com/embed/451a57dd3e764a85a8ae15de25b6481f"
     info = {"name": name, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
     return info
 
