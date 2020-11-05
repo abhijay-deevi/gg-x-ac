@@ -38,7 +38,7 @@ def travis():
     helloplan = "https://docs.google.com/document/d/1XaPZ--7wySEcW2FxqsHtjPz_ZBL5XkvMO3YKU3WnfuE/edit"
     flaskjournal = "https://docs.google.com/document/u/1/d/1ZO3EeqNx1zvSb9n5SB10LrwVmDFanpyXzBcd8knlcm4/edit"
     flaskplan = "https://docs.google.com/document/d/105jwbIr-4cbkUsLuzsVs2iT0rq5AoKy_bZxHiKmyHqU/edit"
-    video = "https://www.loom.com/embed/cc7a5d516fe448fab7ba6fa75af71373"
+    video = "https://drive.google.com/file/d/1ADzv5Bg5rbzl4HrxX6mY2FXHjxCoGGKX/view?usp=sharing"
     info = {"name": name, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
     return info
 
