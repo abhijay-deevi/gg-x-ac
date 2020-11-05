@@ -43,7 +43,10 @@ def travis():
     flaskjournal = "https://docs.google.com/document/u/1/d/1ZO3EeqNx1zvSb9n5SB10LrwVmDFanpyXzBcd8knlcm4/edit"
     flaskplan = "https://docs.google.com/document/d/105jwbIr-4cbkUsLuzsVs2iT0rq5AoKy_bZxHiKmyHqU/edit"
     video = "https://www.loom.com/embed/cc7a5d516fe448fab7ba6fa75af71373"
-    summary = ""
+    summary = "For the future of computer science I will keep expanding my knowledge in HTML and CSS which is very interesting. " \
+              "The process of making websites and adding certain styles, colors, and designs to them to make them personal to me." \
+              " I will focus more on the back end as well because I am not as good with it as the front end. Once I understand Python and the backend a little more I can make better things." \
+              " I will learn new things to make my websites and projects even better and continue to learn new code."
     info = {"name": name, "summary": summary, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
     return info
 
@@ -54,8 +57,10 @@ def gavin():
     helloplan = "https://docs.google.com/document/d/1XaPZ--7wySEcW2FxqsHtjPz_ZBL5XkvMO3YKU3WnfuE/edit"
     flaskjournal = "https://docs.google.com/document/u/1/d/1ZO3EeqNx1zvSb9n5SB10LrwVmDFanpyXzBcd8knlcm4/edit"
     flaskplan = "https://docs.google.com/document/d/105jwbIr-4cbkUsLuzsVs2iT0rq5AoKy_bZxHiKmyHqU/edit"
-    video = ""
-    summary = ""
+    video = "https://www.loom.com/embed/451a57dd3e764a85a8ae15de25b6481f"
+    summary = "In the future of AP Computer Science Principles, I want to further my understanding in HTML and CSS to get better at the making websites more appealing and better at functioning. " \
+              "I like how it allows you to make websites unique to you. I also need to get a better understanding of the backend of the code and learning to connect webpages using python. " \
+              "I also need to further my understanding of jinja due to the fact I'm still confused on how to incorporate it."
     info = {"name": name, "summary": summary, "emoji": emoji, "hellojournal": hellojournal, "helloplan": helloplan, "flaskjournal": flaskjournal, "flaskplan": flaskplan, "video": video}
     return info
 
