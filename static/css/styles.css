@@ -241,13 +241,13 @@ body::-webkit-scrollbar-thumb {
         border: 0.2em solid #ff458a;
         }
 .text-box {
-  width:350px;
+  width:30%;
   padding-top:5px;
   padding-left:4px;
   padding-bottom:10px;
   word-wrap: break-word;
-  position: absolute;
-  right:325px;
+  float:right;
+  margin-right:10%;
   top:89%;
 }
 
