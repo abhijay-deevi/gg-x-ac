@@ -14,27 +14,83 @@
 
 <center>
     <div style="margin-top:2em" class="Header">
-        <h1 style="font-size:4em;">Purchasing Options</h1>
+        <h1 style="font-size:4em;"><i class="fa fa-lock"></i>&nbsp;&nbsp;Secure Checkout</h1>
+        <p class="Paragraph">*not actually secure, don't put real information</p>
         <p style="font-size:2em" class="Paragraph">
-            <i class="fa fa-cc-paypal"></i>
-            <i class="fa fa-cc-visa"></i>
-            <i class="fa fa-cc-mastercard"></i>
-            <i class="fa fa-cc-amex"></i>
+            <img src="static/images/cc/visa.svg" width=50px>
+            <img src="static/images/cc/mastercard.svg" width=50px>
+            <img src="static/images/cc/amex.svg" width=50px>
+            <img src="static/images/cc/discover.svg" width=50px>
+            <img src="static/images/cc/unknown.svg" width=50px>
         </p>
     </div>
 </center>
     <div style="padding-top: 3em; padding-left:25em;">
-        <h1 class="Titles" style="color:white;font-size:2em">
-            1. Contact Options<br>
-            2. Shipping Address<br>
-            3. Shipping Options<br>
-            4. Billing Address<br>
-            5. Secure Payment<br>
-        </h1>
+        <h1 class="Titles" style="color:white;font-size:2em">1. Contact Info</h1>
+        <form method="post">
+            <p><input size="40" type="email" name="email" placeholder="email address" data-val-regex="Invalid email address format."
+                      data-val-required="Email Address is required." required></p>
+        <h1 class="Titles" style="color:white;font-size:2em">2. Shipping Address</h1>
+            <p>
+                <input size="20" type="text" name="firstname" placeholder="first name" data-val-required="First Name is required." required>
+                <input size="20" type="text" name="lastname" placeholder="last name" data-val-required="Last Name is required." required>
+            </p>
+            <p><input size="50" type="text" name="address" placeholder="street address" data-val-required="Street Address is required." required></p>
+            <p><input size="50" type="text" name="extra_address" placeholder="apt, suite, bldg, gate code (optional)"></p>
+            <p>
+                <input size="20" type="text" name="city" placeholder="city" data-val-required="City is required." required>
+                <input size="20" type="text" name="state" placeholder="state" data-val-required="State is required." required>
+                <input size="20" type="text" name="zipcode" placeholder="zip/postal code" data-val-required="Zip/Postal Code is required." required>
+            </p>
+            <p><input size="40" type="text" name="phonenumber" placeholder="phone number" data-val-required="Phone Number is required." required></p>
+
+        <h1 class="Titles" style="color:white;font-size:2em">3. Billing Address</h1>
+            <p class="Paragraph"><input checked type="checkbox" name="sameAsShipping" id="ShippingCheckboxz">&nbsp;Same as Shipping Address</p>
+            <div style="display:show" id="BillingFormz">
+                <p>
+                    <input size="20" type="text" name="firstname" placeholder="first name" data-val-required="First Name is required." required>
+                    <input size="20" type="text" name="lastname" placeholder="last name" data-val-required="Last Name is required." required>
+                </p>
+                <p><input size="50" type="text" name="address" placeholder="street address" data-val-required="Street Address is required." required></p>
+                <p><input size="50" type="text" name="extra_address" placeholder="apt, suite, bldg, gate code (optional)"></p>
+                <p>
+                    <input size="20" type="text" name="city" placeholder="city" data-val-required="City is required." required>
+                    <input size="20" type="text" name="state" placeholder="state" data-val-required="State is required." required>
+                    <input size="20" type="text" name="zipcode" placeholder="zip/postal code" data-val-required="Zip/Postal Code is required." required>
+                </p>
+                <p><input size="40" type="text" name="phonenumber" placeholder="phone number" data-val-required="Phone Number is required." required></p>
+            </div>
+        <h1 class="Titles" style="color:white;font-size:2em">4. Secure Payment</h1>
+            <p style="font-size:2em" class="Paragraph">
+                <img src="static/images/cc/visa.svg" width=30px>
+                <img src="static/images/cc/mastercard.svg" width=30px>
+                <img src="static/images/cc/amex.svg" width=30px>
+                <img src="static/images/cc/discover.svg" width=30px>
+                <img src="static/images/cc/unknown.svg" width=30px>
+            </p>
+            <p><input size="50" type="text" name="cardnumber" placeholder="card number" data-val-required="Card Number is required." required></p>
+            <p>
+                <input size="20" type="text" name="expiration" placeholder="expiration" data-val-required="Expiration Date is required." required>
+                <input size="20" type="text" name="cvc" placeholder="cvc" data-val-required="CVC Number is required." required>
+            </p>
+        <p class="Paragraph">Please double-check the shipping address. Once you hit "Place Order Now", we'll process your payment and order.</p>
+        <p><input style="border:none;padding:5px;border-radius:15px;background-color: #ff458a;box-shadow: 0px 5px 5px #171717;font-size:1.5em" class="Paragraph"
+                  type="submit"
+                  value="Place Order Now"></p>
+        </form>
     </div>
 
 <div style="margin-top:5%">
 
 </div>
+<script>
+    var elem = document.getElementById('BillingFormz'),
+    checkBox = document.getElementById('ShippingCheckboxz');
+    checkBox.checked = true;
+    checkBox.onchange = function() {
+        elem.style.display = this.checked ? 'none' : 'block';
+    };
+    checkBox.onchange();
 
+</script>
 {% endblock %}
