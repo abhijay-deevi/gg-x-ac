@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% set firstname = data["firstname"] %}
+{% set lastname = data["lastname"] %}
+{% set address = data["address"] %}
+{% set extra_address = data["extra_address"] %}
+{% set city = data["city"] %}
+{% set state = data["state"] %}
+{% set zipcode = data["zipcode"] %}
+{% set phonenumber = data["phonenumber"] %}
+{% set protectedcardnumber = data["protectedcardnumber"] %}
+{% set expiration = data["expiration"] %}
+{% set cvc = data["cvc"] %}
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}" type="text/css">
+</head>
+
+<style>
+
+</style>
+<html>
+{% extends "base1.html" %}
+<body>
+
+{% block success %}
+<center>
+
+    <div class="dropShadow"> <!-- banner -->
+        <img style="margin-top:100px;min-width:100%;width:100%;height:auto"src="{{url_for('static', filename='images/apcoxggbannercrop.jpg')}}" alt="channel art" width=relative>
+    </div>
+
+</center>
+
+
+<center>
+    <div style="margin-top:0em" class="Header">
+        <h1 class="products" style="font-size:4em;">THANK YOU!</h1>
+        <p style="font-size:2em" class="Paragraph">Thanks for supporting us!</p>
+    </div>
+</center>
+    <div style="float:left;margin-left:20%;width:30%">
+        <p class="Paragraph">Hi {{firstname}} {{lastname}}! Thanks for using our website and purchasing your items!</p>
+        <p class="Paragraph">Your items will be shipped to {{address}} {{extra_address}} {{city}}, {{state}} {{zipcode}}.</p>
+        <p class="Paragraph">If we have any problems, we will make sure to contact you ASAP at you number: {{phonenumber}}.</p>
+        <p class="Paragraph">Card Number:  **** **** **** {{protectedcardnumber}}</p>
+        <p class="Paragraph">Expiration Date:  {{expiration}}</p>
+    </div>
+    <div style="float:right;margin-right:20%;width:20%">
+        <h1 class="Titles">Check out our partner!</h1>
+        <a target="blank" href="https://coding4kidz.org"><img src="/static/images/c4k.png" width="200px" style="border-radius:50%" ></a>
+    </div>
+
+
+{% endblock %}
+</body>
+</html>
