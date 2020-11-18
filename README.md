@@ -60,12 +60,16 @@ We had a lot of features overall and we made some epic stuff in the entire proje
 
 # TODOS: Navigating Our Website
 
+#### The Landing Page
+- When you first open our website, you will be in our landing page. To enter, click the image in the middle and you will be directed to the home page. 
+
 #### Navigation Bar
 ##### Home
 - View our featured merchandise products and upcoming merchandise!
 - We only have four different things right now but in the future, more may be added!
 ##### Products
-- View the page with all of our products.
+- View the page with all of our products. From any of the places that you can view the products (Home Page and Products Page), you can actually see the products, their
+ descriptions, reviews, and select sizes for adding to the cart! (We haven't implemented a way for the items to appear in the cart though.)
 ##### About
 - Learn more about the team and view our individual information by clicking each person.
 ##### Projects
