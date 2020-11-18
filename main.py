@@ -105,6 +105,7 @@ def success():
         phonenumber = (form['phonenumber'])
         cardnumber = (form['cardnumber'])
         protectedcardnumber = cardnumber[-4] + cardnumber[-3] + cardnumber[-2] + cardnumber[-1]
+        #takes the card number and gets the last 4 characters
         expiration = (form['expiration'])
         cvc = (form['cvc'])
         info = {"firstname": firstname, "lastname": lastname, "address": address, "extra_address": extra_address, "city": city, "state": state, "zipcode": zipcode,

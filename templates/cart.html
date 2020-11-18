@@ -49,7 +49,7 @@
 
 
 </div>
-
+<!-- all the different forms for the checkout process -->
     <div style="padding-top: 3em; padding-left:20em;">
         <h1 class="Titles" style="color:white;font-size:2em">1. Contact Info</h1>
         <form id="form" method="post">
@@ -71,7 +71,7 @@
 
         <h1 class="Titles" style="color:white;font-size:2em">3. Billing Address</h1>
             <p class="Paragraph"><input checked type="checkbox" name="sameAsShipping" id="ShippingCheckboxz">&nbsp;Same as Shipping Address</p>
-            <div style="display:show" id="BillingFormz">
+            <div style="display:show" id="BillingFormz"> <!-- Billng Address forms that dissapear and appear. toggled by checkbox -->
                 <p>
                     <input size="20" type="text" name="firstname" placeholder="first name" data-val-required="First Name is required." >
                     <input size="20" type="text" name="lastname" placeholder="last name" data-val-required="Last Name is required." >
@@ -110,7 +110,7 @@
 
 </div>
 
-
+<!-- javascript that checks to see if the checkbox is checked and switches the display of the div that has the forms to none or block -->
 <script>
     var elem = document.getElementById('BillingFormz'),
     checkBox = document.getElementById('ShippingCheckboxz');

@@ -1,3 +1,5 @@
+
+#data for each person in the group for the about page
 def kevin():
     name = "Kevin Do"
     emoji = "kevin" #first name for emoji style
