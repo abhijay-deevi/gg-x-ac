@@ -58,9 +58,30 @@ You will be redirected to another page that will actually show your information!
 
 We had a lot of features overall and we made some epic stuff in the entire project. 
 
-# TODOS
+# TODOS: Navigating Our Website
 
-
+#### Navigation Bar
+##### Home
+- View our featured merchandise products and upcoming merchandise!
+- We only have four different things right now but in the future, more may be added!
+##### Products
+- View the page with all of our products.
+##### About
+- Learn more about the team and view our individual information by clicking each person.
+##### Projects
+- **Python Hello Series**:See our first project in the APCSP!
+- **Web Portfolio**: We have two web portfolios for the two pair/trio shares in our group. We later combined our skills and worked together on this beautiful website. 
+- **Flask Series**: Together, we created this beautiful  merch website that you see here. Although you can't really buy the merch, it would be really cool if we could set
+ something up like that in the future.
+ 
+#### Cart Page
+##### "Purchasing" Our Merch
+- In the cart page, we have forms set up for you to put in your information. Don't worry, we aren't saving this data in anywhere.
+##### Viewing your "Order Reciept"
+- After "buying" your fresh merchandise, you can see your order receipt which uses variables that are taken from whatever you inputed into the checkout forms.
+##### Check out Coding4Kidz!
+- In the order reciept page, you can view the Coding4Kidz Club website by clicking the circle with the Coding4Kidz logo!  
+ 
 In regards to putting the code together,
 We used flask and jinja to connect the different pages and extend the html.
 
